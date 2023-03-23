@@ -68,29 +68,29 @@ const ExpenseForm = (props) => {
 
   return (
     <form onSubmit={submitHandler} className="">
-      <div className="new-expense__controls">
+        <div className="new-expense__controls">
 
-        <div className="new-expense__control">
-            <label htmlFor="">Title</label>
-            <input value={enteredTitle} onChange={titleChangeHandler} type="text" />
-        </div>
-        
-        <div className="new-expense__control">
-            <label htmlFor="">Amount</label>
-            <input value={enteredAmount} onChange={amountChangeHandler} type="number" min="0.01" step="0.01" />
-        </div>
-        
-        <div className="new-expense__control">
-            <label htmlFor="">Date</label>
-            <input value={enteredDate} onChange={dateChangeHandler} type="date" min="2019-01-01" step="2022-12-31" />
-        </div>
+            <div className="new-expense__control">
+                <label htmlFor="">Title</label>
+                <input value={enteredTitle} onChange={titleChangeHandler} type="text" />
+            </div>
+            
+            <div className="new-expense__control">
+                <label htmlFor="">Amount</label>
+                <input value={enteredAmount} onChange={amountChangeHandler} type="number" min="0.01" step="0.01" />
+            </div>
+            
+            <div className="new-expense__control">
+                <label htmlFor="">Date</label>
+                <input value={enteredDate} onChange={dateChangeHandler} type="date" min="2019-01-01" step="2022-12-31" />
+            </div>
 
-        <div className="new-expense__actions">
-            <button onClick={handleDismissToggle}>Cancel</button>
-            <button type='submit'>Add Expense</button>
-        </div>
+            <div className="new-expense__actions">
+                <button onClick={handleDismissToggle}>Cancel</button>
+                <button type='submit'>Add Expense</button>
+            </div>
 
-      </div>
+        </div>
     </form>
   )
 }

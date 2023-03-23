@@ -11,7 +11,7 @@ const NewExpense = (props) => {
             id: Math.random().toString()
         };
         props.onAddExpense(expenseData);
-        setToggleForm(false);
+        setToggleForm(!toggleForm);
     }
 
     const handleToggleForm = () => {
