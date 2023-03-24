@@ -1,5 +1,8 @@
 import React from 'react'
 import styles from './Button.module.css'
+
+// Implementing styled components
+
 // import styled from 'styled-components'
 
 // const Button = styled.button`
