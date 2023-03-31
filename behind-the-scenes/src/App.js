@@ -11,7 +11,10 @@ function App() {
   console.log('APP RUNNING');
 
   const togglerParagraphHandler = useCallback(() => {
-    {allowToggle && setShowParagraph(prevShowParagraph => !prevShowParagraph)};
+    if(allowToggle) 
+    {
+      setShowParagraph(prevShowParagraph => !prevShowParagraph)
+    };
   }, [allowToggle]);
 
   const allowToggleHandler = () => {
