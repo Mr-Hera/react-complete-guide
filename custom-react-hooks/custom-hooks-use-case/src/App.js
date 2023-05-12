@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import Tasks from './components/Tasks/Tasks';
 import NewTask from './components/NewTask/NewTask';
@@ -24,7 +24,7 @@ function App() {
     };
 
     fetchTasks({ url: 'https://react-http-bbdd7-default-rtdb.firebaseio.com/tasks.json' }, transformedTasks);
-  }, []);
+  }, [fetchTasks]);
 
   const taskAddHandler = (task) => {
     setTasks((prevTasks) => prevTasks.concat(task));
